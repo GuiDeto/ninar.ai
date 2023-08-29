@@ -49,9 +49,9 @@
         }
 }();
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.querySelector('#grid').addEventListener('click', () => {
-        window.open('https://detonix.com.br/sites/ninar.ai_v4/', 'ninar.ai')
-    })
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     document.querySelector('#grid').addEventListener('click', () => {
+//         window.open('https://detonix.com.br/sites/ninar.ai_v4/', 'ninar.ai')
+//     })
+// });
 

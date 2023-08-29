@@ -23,11 +23,26 @@ html, body {
     transition: background-color 1s;
 }
 
-@media (max-width: 600px) {
+ @media (max-width: 600px) {
+    .square {
+        height: calc((100vw - 118px - 15px) / 10)!important;
+        border-radius: 7px;
+        margin: 5px;
+        min-width: 6vw!important;
+    }
+    .container {
+        margin-left:25px;
+    }
+ }
+/* @media (max-width: 600px) {
     .square {
         height: calc((100vw - 130px - 35px) / 10)!important;
         border-radius: 7px!important;
         min-width: 28px!important;
         margin: 5px !important;
     }
-}
+    div#grid {
+        height: 360px;
+        overflow: hidden;
+    }
+} */
