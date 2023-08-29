@@ -24,6 +24,9 @@ html, body {
 
 @media (max-width: 600px) {
     .square {
-        height: calc((100vw - 80px - 60px) / 10)!important;
+        height: calc((100vw - 80px - 59px) / 10)!important;
+        margin: 6px;
+        min-width: 26px;
+        border-radius: 5px;
     }
 }
