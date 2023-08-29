@@ -2,7 +2,7 @@
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 6; i++) {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
@@ -30,7 +30,7 @@ const grid = d3.select('#grid')
 // Compute the size of the squares based on the window size
 function setSquareSize() {
     const containerWidth = document.getElementById('grid').offsetWidth;
-    const squareSize = (containerWidth - (40 * (gridSize + 1))) / gridSize;
+    const squareSize = (containerWidth - (20 * (gridSize + 1))) / gridSize;
 
     d3.selectAll('.square')
         .style('width', `${squareSize}px`)
