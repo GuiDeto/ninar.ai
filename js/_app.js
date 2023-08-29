@@ -34,7 +34,7 @@
         } catch (e) {
             return !1
         }
-    }() ? "{}"),
+    }() ? "{}" : ''),
         w = n,
         v = w.loadedCss,
         y = w.loadedModules;
@@ -48,3 +48,10 @@
             m && !v[m] && (l = m, u = void 0, (u = s.createElement("link")).rel = "stylesheet", u.href = l, d.appendChild(u), v[m] = (new Date).toISOString())
         }
 }();
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('#grid').addEventListener('click', () => {
+        window.open('https://detonix.com.br/sites/ninar.ai_v4/', 'ninar.ai')
+    })
+});
+

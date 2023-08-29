@@ -9,13 +9,13 @@ function getRandomColor() {
 }
 
 // Generate an array of 20 random colors
-const colors = Array.from({length: 20}, () => getRandomColor());
+const colors = Array.from({ length: 20 }, () => getRandomColor());
 
 // Configurable grid size, default is 5x5
 const gridSize = 10;
 
 // Prepare the data for squares with initial random colors
-const squaresData = Array.from({length: gridSize * gridSize}, (_, i) => ({id: i, color: colors[i % colors.length]}));
+const squaresData = Array.from({ length: gridSize * gridSize }, (_, i) => ({ id: i, color: colors[i % colors.length] }));
 
 // Create a grid of squares using D3.js
 const grid = d3.select('#grid')
@@ -66,7 +66,7 @@ function step() {
         .style('background-color', square.color)
         .on('end', () => {
             // Remove squares after transition
-            squaresData = squaresData.filter(d => d.id !== square.id && d.id !== adjacentSquare.id);
+            // squaresData = squaresData.filter(d => d.id !== square.id && d.id !== adjacentSquare.id);
             grid.data(squaresData).exit().remove();
         });
 }
