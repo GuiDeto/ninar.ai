@@ -9,7 +9,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    border: 20px solid black;
+    border: 30px solid black;
     background-color: black;
 }
 
