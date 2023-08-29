@@ -26,7 +26,7 @@ html, body {
     .square {
         height: calc((100vw - 130px - 35px) / 10)!important;
         border-radius: 3px!important;
-        min-width: 46.9px!important;
+        min-width: 31px!important;
         margin: 5px !important;
     }
 }
