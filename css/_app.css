@@ -9,7 +9,7 @@ html, body {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-content: flex-start;
-    border: 20px solid black;
+    border: 5px solid black;
     background-color: black;
 }
 
@@ -24,9 +24,9 @@ html, body {
 
 @media (max-width: 600px) {
     .square {
-        height: calc((100vw - 80px - 60px) / 10);
-    }
-    .square {
-        border-radius: 3px;
+        height: calc((100vw - 130px - 35px) / 10)!important;
+        border-radius: 3px!important;
+        min-width: 28px!important;
+        margin: 5px !important;
     }
 }
