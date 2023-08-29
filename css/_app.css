@@ -27,6 +27,6 @@ html, body {
         height: calc((100vw - 80px - 60px) / 10);
     }
     .square {
-        border-radius: 5px;
+        border-radius: 3px;
     }
 }
